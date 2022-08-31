@@ -1,0 +1,37 @@
+/* BASE */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1,
+h2 {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
