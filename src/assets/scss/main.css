@@ -1,0 +1,186 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+/* VARIABLES CSS */
+:root {
+  /* COLORS */
+  --background-header: #202020;
+  --bacground-footer: #151515;
+  --red: #e62429;
+  --red-hover: #9f0013;
+  --gray: #767676;
+  --slash-title: #c6a972;
+  /* FONT & TYPOGRAPHY */
+  --body-font: "Roboto Condensed", sans-serif;
+  --biggest-font-size: 1.625rem;
+  --title-font-size: 0.875rem;
+  --link-font-size: 0.8125rem;
+  --metaCreators-font-size: 0.6875rem;
+  /* FONT WEIGHT */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 700;
+}
+
+/* BASE */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1,
+h2 {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  background-color: var(--background-header);
+  color: #fff;
+}
+.header__upper {
+  height: 52px;
+  border-bottom: 1px solid #393939;
+  padding: 0px 20px;
+}
+.header__upper .upperContainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header__upper .upperContainer .user-menu-tab {
+  height: 51px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 25px;
+  cursor: pointer;
+  border-left: 1px solid #393939;
+  border-right: 1px solid #393939;
+}
+.header__upper .upperContainer .user-menu-tab .user-menu__avatar {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header__upper .upperContainer .user-menu-tab .user-menu__avatar svg {
+  fill: #fff;
+}
+.header__upper .upperContainer .user-menu-tab .user-menu-links {
+  color: #fff;
+}
+.header__upper .upperContainer .user-menu-tab .user-menu-links a {
+  color: inherit;
+  text-transform: uppercase;
+  font-size: var(--metaCreators-font-size);
+  font-weight: var(--font-bold);
+  letter-spacing: 1px;
+}
+.header__upper .upperContainer .user-menu-tab .user-menu-links span {
+  margin: 5px;
+}
+.header__upper .upperContainer .logo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 52px;
+  width: 130px;
+}
+.header__upper .upperContainer .right-links {
+  display: flex;
+}
+.header__upper .upperContainer .right-links .searchPromo-Container {
+  display: flex;
+  line-height: 0.9;
+  align-items: center;
+  border-right: none;
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-left: 1px solid #393939;
+}
+.header__upper .upperContainer .right-links .searchPromo-Container .searchPromo__img {
+  height: 25px;
+  margin-right: 10px;
+}
+.header__upper .upperContainer .right-links .searchPromo-Container .searchPromo__img img {
+  height: 100%;
+}
+.header__upper .upperContainer .right-links .searchPromo-Container .searchPromo__wrap {
+  text-transform: uppercase;
+  font-size: var(--metaCreators-font-size);
+  font-weight: var(--font-bold);
+  letter-spacing: 1px;
+}
+.header__upper .upperContainer .right-links .searchPromo-Container .searchPromo__wrap span {
+  margin-top: 3px;
+  display: block;
+  text-align: center;
+}
+.header__upper .upperContainer .right-links .search {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-left: 1px solid #393939;
+  border-right: 1px solid #393939;
+}
+.header__upper .upperContainer .right-links .search .search_icon {
+  fill: var(--gray);
+  width: 18px;
+  height: 18px;
+}
+.header__lower {
+  height: 40px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+.header__lower ul {
+  display: flex;
+  margin: 0 auto;
+}
+.header__lower ul li {
+  font-size: var(--link-font-size);
+  font-weight: var(--font-bold);
+  padding: 0 18px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.header__lower ul li a {
+  color: inherit;
+}/*# sourceMappingURL=main.css.map */
