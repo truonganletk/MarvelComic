@@ -9,6 +9,7 @@ import Category from './pages/Category';
 import Detail from './pages/Detail';
 import Home from './pages/Home';
 import Search from './pages/Search';
+import Page404 from './pages/Page404';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
             <li>
               <Link to="/detail">Detail</Link>
             </li>
+            <li>
+              <Link to="/detail/comic/123">comic</Link>
+            </li>
           </ul>
         </nav>
 
@@ -36,8 +40,16 @@ function App() {
         <div>
         <Routes>
           <Route exact path="/category" element={<Category/>} />
-          <Route path="/search" element={<Search/>} />
-          <Route path="/detail" element={<Detail/>} />
+          <Route path="/search" element={<Search/>} />          
+          <Route path="detail">
+            <Route index element={<Page404/>} />
+            <Route path="comic/:id" element={<Detail keyword={"comics"}/>} />
+            <Route path="character/:id" element={<Detail keyword={"characters"}/>} />
+            <Route path="creator/:id" element={<Detail keyword={"creators"}/>} />
+            <Route path="event/:id" element={<Detail keyword={"events"}/>} />
+            <Route path="seri/:id" element={<Detail keyword={"series"}/>} />
+            <Route path="story/:id" element={<Detail keyword={"stories"}/>} />
+          </Route>
           <Route path="/" element={<Home/>} />
         </Routes>
         </div>
