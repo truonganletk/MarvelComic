@@ -1,0 +1,25 @@
+.listC{
+    width: 80%;
+    margin: 0 auto;
+    .cardC{
+        margin: 40px 0;
+        .cardC-content{
+            display: flex;
+            align-items: center;
+            .cardC-image{
+                flex-basis: 10%;
+            }
+            .cardC-text{
+                margin-left: 60px;
+                p{
+                    text-transform: uppercase;
+                    color: var(--gray);
+                    letter-spacing: 2px;
+                }
+                h3{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
