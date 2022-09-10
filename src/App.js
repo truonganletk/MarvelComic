@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  useParams
 } from "react-router-dom";
 import Category from './pages/Category';
 import Detail from './pages/Detail';
@@ -43,7 +44,7 @@ function App() {
           <Route path="/search" element={<Search/>} />          
           <Route path="detail">
             <Route index element={<Page404/>} />
-            <Route path="comic/:id" element={<Detail keyword={"comics"}/>} />
+            <Route path="comic/:id" element={<Detail keyword={"comics"} params={useParams()}/>} />
             <Route path="character/:id" element={<Detail keyword={"characters"}/>} />
             <Route path="creator/:id" element={<Detail keyword={"creators"}/>} />
             <Route path="event/:id" element={<Detail keyword={"events"}/>} />

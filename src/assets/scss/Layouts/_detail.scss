@@ -1,0 +1,46 @@
+.Detailcard {
+    position: relative;
+    overflow: hidden;
+    .Detailcard-content {
+        display: flex;
+        width: 80%;
+        margin: 60px auto;
+        flex-wrap: wrap;
+
+        .Detailcard-img {
+            flex-basis: 40%;
+        }
+        .Detailcard-text {
+            flex-basis: 60%;
+            padding-left: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            &-flex1 {
+                flex-basis: 50%;
+            }
+            &-flex2 {
+                flex-basis: 100%;
+            }
+            .Detailcard-text-title {
+                color: white;
+                font-size: 22px;
+            }
+            .Detailcard-text-description {
+                margin-top: 40px;
+                color: rgb(227, 225, 225);
+                line-height: 22px;
+            }
+            .Detailcard-text-button{
+                margin-top: 15px;
+                color: white;
+                font-size: 18px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                &::after{
+                    content: ' ->';
+                    color: red;
+                }
+            }
+        }
+    }
+}
