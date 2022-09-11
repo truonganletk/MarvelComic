@@ -1,0 +1,60 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+/* VARIABLES CSS */
+:root {
+  /* COLORS */
+  --background-header: #202020;
+  --background-footer: #151515;
+  --red: #e62429;
+  --red-hover: #9f0013;
+  --gray: #767676;
+  --slash-title: #c6a972;
+  /* FONT & TYPOGRAPHY */
+  --body-font: "Roboto Condensed", sans-serif;
+  --biggest-font-size: 1.625rem;
+  --title-font-size: 0.875rem;
+  --link-font-size: 0.8125rem;
+  --metaCreators-font-size: 0.6875rem;
+  /* FONT WEIGHT */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 700;
+}
+
+/* BASE */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+h1,
+h2 {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}/*# sourceMappingURL=main.css.map */
