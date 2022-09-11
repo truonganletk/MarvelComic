@@ -1,0 +1,39 @@
+.listC{
+    width: 80%;
+    margin: 0 auto;
+    .cardC{
+        margin: 40px 0;
+        .cardC-content{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #bbb;
+            padding: 20px 0;
+            .cardC-image{
+                flex-basis: 20%;
+            }
+            .cardC-text{
+                margin-left: 60px;
+                p{
+                    text-transform: uppercase;
+                    color: var(--gray);
+                    letter-spacing: 2px;
+                }
+                h3{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+    @include respond-to("sm"){
+        .cardC{
+            .cardC-content{
+                .cardC-image{
+                    flex-basis: 30%;
+                }
+                .cardC-text{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
