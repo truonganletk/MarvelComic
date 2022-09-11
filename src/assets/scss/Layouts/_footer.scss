@@ -1,0 +1,91 @@
+footer {
+    background-color: var(--background-footer);
+    color: var(--gray);
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding: 60px 0;
+        .footer-boldlist {
+            li {
+                text-transform: uppercase;
+                font-size: 18px;
+                letter-spacing: 1.2px;
+                margin-bottom: 12px;
+                font-weight: 500;
+            }
+        }
+        .footer-list {
+            li {
+                text-transform: uppercase;
+                font-size: 18px;
+                letter-spacing: 1.2px;
+                margin-bottom: 12px;                
+            }
+        }
+        .footer-list-item {
+            color: white;
+        }
+        .footer-brand {
+            .brand-card {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 22px;
+
+                img {
+                    width: 20%;
+                    height: auto;
+                }
+                .brand-card-text {
+                    h3 {
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .footer-social {
+            h3 {
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                font-size: 16px;
+                color: white;
+                margin-bottom: 20px;
+            }
+            .social-icon {
+                flex-wrap: wrap;
+                display: flex;
+                &-item {
+                    flex-basis: 25%;
+                    padding-right: 15px;
+                    padding-bottom: 20px;
+                    * {
+                        color: var(--gray);
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        width: 80%;
+        padding: 40px 0;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-item {
+            display: inline;
+            color: var(--gray);
+            margin-right: 25px;
+            letter-spacing: 1.2px;
+            white-space: nowrap;
+        }
+    }
+}
