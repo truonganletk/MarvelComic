@@ -1,0 +1,54 @@
+.icon{
+    *{
+        transition: 0.5s;
+    }
+    &.icon-fb{
+        &:hover{
+            *{
+                color: $facebook !important;  
+            }              
+        }   
+    }
+    &.icon-twitter{
+        &:hover{
+            *{
+                color: $twitter !important;  
+            }              
+        }       
+    }
+    &.icon-instagram{
+        &:hover{
+            *{
+                color: $instagram !important;  
+            }              
+        }       
+    }
+    &.icon-telegram{
+        &:hover{
+            *{
+                color: $twitter !important;  
+            }              
+        }       
+    }
+    &.icon-youtube{
+        &:hover{
+            *{
+                color: $youtube !important;  
+            }              
+        }       
+    }
+    &.icon-ghost{
+        &:hover{
+            *{
+                color: white !important;  
+            }              
+        }       
+    }
+    &.icon-pinterest{
+        &:hover{
+            *{
+                color: $pinterest !important;  
+            }              
+        }       
+    }
+}

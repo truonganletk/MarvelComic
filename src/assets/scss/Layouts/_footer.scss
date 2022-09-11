@@ -1,0 +1,178 @@
+footer {
+    background-color: var(--background-footer);
+    color: var(--gray);
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding: 60px 0;
+        .footer-list {
+            padding: 0 15px;
+            li {
+                text-transform: uppercase;
+                font-size: 18px;
+                letter-spacing: 1.2px;
+                margin-bottom: 12px;
+            }
+            &.footer-list-bold{
+                li{
+                    font-weight: 500;
+                }
+            }
+        }
+        .footer-list-item {
+            color: white;
+            transition: 0.5s;
+            &:hover {
+                color: #bbb;
+            }
+        }
+        .footer-brand {
+            padding: 0 15px;
+            .brand-card {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 22px;
+
+                img {
+                    width: 70%;
+                    height: auto;
+                }
+                .brand-card-text {
+                    h3 {
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .footer-social {
+            padding: 0 15px;
+            h3 {
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                font-size: 16px;
+                color: white;
+                margin-bottom: 20px;
+            }
+            .social-icon {
+                flex-wrap: wrap;
+                display: flex;
+                &-item {
+                    flex-basis: 25%;
+                    padding-right: 15px;
+                    padding-bottom: 20px;
+                    * {
+                        color: var(--gray);
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        width: 60%;
+        padding: 40px 0;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-item {
+            display: inline;
+            color: #767676;
+            margin-right: 25px;
+            letter-spacing: 1.2px;
+            white-space: nowrap;
+            font-size: 12px;
+            line-height: 1.2em;
+            margin-bottom: 10px;
+            transition: 0.5s;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+    @include respond-to("xl") {
+        .footer-bottom{
+            width: 80%;
+        }
+    }
+    @include respond-to("lg") {
+        .footer-top {
+            width: 95%;
+            margin: 0 20px;
+        }
+        .footer-bottom{
+            width: 90%;
+        }
+    }
+    @include respond-to("md") {
+        .footer-top {
+            flex-wrap: wrap;
+            .logo{
+                flex-basis: 20%;
+            }
+            .footer-list{
+                padding: 0 40px;
+                flex-basis: 40%;
+            }
+            .footer-brand{
+                flex-basis: 100%;
+                padding:30px 0;
+                margin:30px 0;
+                display: flex;
+                border-top: 1px solid var(--gray);
+                border-bottom: 1px solid var(--gray);
+                .brand-card{
+                    margin: 0;
+                }
+            }
+            .footer-social{
+                flex-basis: 100%;
+                padding:20px 0;
+                .social-icon {
+                    margin-top: 30px;
+                    justify-content: space-around;
+                    &-item {
+                        flex-basis: auto;
+                    }
+                }
+                border-bottom: 1px solid var(--gray);
+            }
+        }
+        .footer-bottom{
+            padding-top: 0;
+        }
+    }
+    @include respond-to("sm") {
+        .footer-top{
+            width: 90%;
+            margin: 0 20px;
+            .logo{
+                flex-basis: 100%;
+                text-align: center;
+                margin-bottom: 50px;
+                img{
+                    width: 40px;            
+                }
+            }
+            .footer-list{
+                flex-basis: 50%;
+                margin: 0;
+                padding: 0;
+            }
+            .footer-brand{
+                flex-wrap: wrap;
+                .brand-card{
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
