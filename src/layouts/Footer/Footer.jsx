@@ -14,7 +14,7 @@ export class Footer extends Component {
           <div className="logo">
             <img src={logo} alt="" width="100" height="50" />
           </div>
-          <ul className='footer-boldlist'>
+          <ul className='footer-list footer-list-bold'>
             <li><Link className='footer-list-item' to="/#">About Marvel</Link></li>
             <li><Link className='footer-list-item' to="/#">Help/Faqs</Link> </li>
             <li><Link className='footer-list-item' to="/#">Careers</Link></li>
@@ -29,16 +29,19 @@ export class Footer extends Component {
           <ul className='footer-brand'>
             <li>
               <div className='brand-card'>
-                <img src={insider} alt="" />
+                <Link to="/#"><img src={insider} alt="" /></Link>
+
                 <div className='brand-card-text'>
-                  <h3>Marvel Insider</h3>
+                  <Link to="/#"><h3>Marvel Insider</h3></Link>
                   <p>Get Rewarded for Being a Mervel Fan</p>
                 </div>
               </div>
+            </li>
+            <li>
               <div className='brand-card'>
-                <img src={marvelunlimited} alt="" />
+                <Link to="/#"><img src={marvelunlimited} alt="" /></Link>
                 <div className='brand-card-text'>
-                  <h3>Marvel Unlimited</h3>
+                  <Link to="/#"><h3>Marvel Unlimited</h3></Link>
                   <p>Access Over 30,000+ Digital Comics</p>
                 </div>
               </div>
@@ -47,13 +50,13 @@ export class Footer extends Component {
           <div className='footer-social'>
             <h3>Follow Marvel</h3>
             <div className='social-icon'>
-              <Link className='social-icon-item' to="/"><FontAwesomeIcon icon={faSquareFacebook} /></Link>
-              <Link className='social-icon-item' to="/"><FontAwesomeIcon icon={faTwitter} /></Link>
-              <Link className='social-icon-item' to="/"><FontAwesomeIcon icon={faInstagram} /></Link>
-              <Link className='social-icon-item' to="/"><FontAwesomeIcon icon={faTelegram} /></Link>
-              <Link className='social-icon-item' to="/"><FontAwesomeIcon icon={faYoutube} /></Link>
-              <Link className='social-icon-item' to="/"><FontAwesomeIcon icon={faSnapchatGhost} /></Link>
-              <Link className='social-icon-item' to="/"><FontAwesomeIcon icon={faPinterest} /></Link>                          
+              <Link className='social-icon-item icon icon-fb' to="/"><FontAwesomeIcon className='' icon={faSquareFacebook} /></Link>
+              <Link className='social-icon-item icon icon-twitter' to="/"><FontAwesomeIcon icon={faTwitter} /></Link>
+              <Link className='social-icon-item icon icon-instagram' to="/"><FontAwesomeIcon icon={faInstagram} /></Link>
+              <Link className='social-icon-item icon icon-telegram' to="/"><FontAwesomeIcon icon={faTelegram} /></Link>
+              <Link className='social-icon-item icon icon-youtube' to="/"><FontAwesomeIcon icon={faYoutube} /></Link>
+              <Link className='social-icon-item icon icon-ghost' to="/"><FontAwesomeIcon icon={faSnapchatGhost} /></Link>
+              <Link className='social-icon-item icon icon-pinterest' to="/"><FontAwesomeIcon icon={faPinterest} /></Link>
             </div>
           </div>
         </div>
