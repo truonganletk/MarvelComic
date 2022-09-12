@@ -43,19 +43,35 @@
 
   .outer {
     width: 100%;
-    overflow: hidden;
+    //overflow: hidden;
 
     .listA {
-      width: 9600px;
-
-      // display: flex;
+      width: 100%;
+      display: flex;
+      //flex: 0 1 auto;
+      //flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-around;
+      row-gap: 2rem;
       // flex-wrap: wrap;
       // column-gap: 2rem;
 
       .cardA {
-        display: inline-block;
-        margin-right: 1.875rem;
-        max-width: 216px;
+        //display: inline-block;
+        //margin-right: 1.875rem;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel {
+    .outer {
+      .listA {
+        margin: 0 auto;
+        width: 60%;
+        flex-wrap: wrap;
       }
     }
   }

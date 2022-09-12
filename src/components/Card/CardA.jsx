@@ -14,7 +14,22 @@ const CardA = ({data}) => {
                         { data.title }
                     </h5>
                     <p className='creators'>
-                       
+                       { 
+                            data.creators.available >= 2 ? 
+                            data.creators.items.map((item, key) => {
+                                if (key>=2) {
+                                    return "";
+                                }
+                                else {
+                                    return item.name + ((key===0)?", ":"")
+                                }
+                            }) 
+
+                            : data.creators.items[0]?.name //"?" ignore undefined case
+
+
+                            
+                       }
                     </p>
                 </div>
             </div>

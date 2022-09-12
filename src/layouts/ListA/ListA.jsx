@@ -26,10 +26,20 @@ export class ListA extends Component {
                     <div className="outer">
                         <ul className='listA'>
                             {
-                                this.state.listA.map(item =>
-                                    <li key={item.key} className='cardA'>
-                                        <CardA data={item}/>
-                                    </li>
+                                this.state.listA.map((item,index) => {
+                                    if (index>=6) {
+                                        return "";
+                                    }
+                                    else {
+                                        return (
+                                            <li key={item.key} className='cardA'>
+                                                <CardA data={item}/>
+                                            </li>
+                                        )
+
+                                    }
+                                }
+                                    
                                 )
                             }
                         </ul>

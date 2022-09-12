@@ -4,8 +4,8 @@
     margin-bottom: 20px;
 
     .thumbnail {
-      width: 216px;
-      height: 328px;
+      max-width: 170px;
+      max-height: 260px;
       box-shadow: 0 26px 24px -16px rgba(0, 0, 0, 0.4);
     }
 
@@ -19,6 +19,12 @@
     }
   }
   .cardA-text {
+    .creators {
+      margin-top: 8px;
+      font-size: var(--metaCreators-font-size);
+      letter-spacing: 0.5px;
+      //font-weight: var(--font-light);
+    }
   }
 }
 
