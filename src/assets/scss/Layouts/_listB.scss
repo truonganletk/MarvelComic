@@ -1,15 +1,21 @@
 .listB {
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 
   .cardB {
     cursor: pointer;
+    max-width: 192px;
+    max-height: 355px;
     .cardB-content {
-      //width: 100%;
+      width: 100%;
+      height: 100%;
       overflow: hidden;
 
       .cardB-image {
         width: 100%;
+        height: 210px;
         position: relative;
         z-index: 3;
         overflow: hidden;
@@ -18,11 +24,14 @@
 
         img {
           width: 100%;
+          height: 100%;
+          object-fit: fill;
         }
       }
 
       .cardB-text {
         width: 100%;
+        height: 145px;
         background: var(--background-footer);
         color: #fff;
         padding: 2rem 0.75rem 1.5rem;
@@ -62,7 +71,8 @@
           font-weight: var(--font-bold);
         }
         .cardB-footer {
-          position: relative;
+          position: absolute;
+          bottom: 15px;
           z-index: 3;
           margin-top: 3rem;
           p {
@@ -77,7 +87,7 @@
       &::before {
         z-index: 1;
         transform: translate3d(0, 100%, 0);
-        //transition: all 0.3 ease;
+        transition: all 0.3 ease;
       }
     }
   }

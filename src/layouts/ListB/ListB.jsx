@@ -8,7 +8,7 @@ export class ListB extends Component {
     }
     
     componentDidMount = () => {
-        axios.get(`http://gateway.marvel.com/v1/public/characters?ts=1&apikey=1a0671e3d28eb43635377754f0572915&hash=a2b08b72060432c20ab8c14a82a2ad72`)
+        axios.get(`http://gateway.marvel.com/v1/public/characters?ts=1&apikey=1a0671e3d28eb43635377754f0572915&hash=a2b08b72060432c20ab8c14a82a2ad72`) /*1+private+public */
             .then(res => {
                 //console.log(res)
                 this.setState({ listB: [...res.data.data.results]})
