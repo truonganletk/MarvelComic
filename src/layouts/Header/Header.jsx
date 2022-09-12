@@ -2,8 +2,21 @@ import React, { Component } from 'react'
 import { ReactComponent as MarvelLogo} from '../../assets/images/header_logo.svg'
 import iconMUshield from '../../assets/images/icon-mu-shield.png'
 import { ReactComponent as SearchIcon } from '../../assets/images/search-svgrepo-com.svg'
+import { ReactComponent as MenuIcon } from '../../assets/images/menu-icon.svg'
+import { ReactComponent as CloseIcon } from '../../assets/images/icons8-close.svg'
 
 export class Header extends Component {
+  ClickMenu = () => {
+    const headerLower = document.getElementsByClassName('header__lower');
+    //console.log(headerLower)
+    headerLower[0].classList.add('active')
+  }
+  CloseMenu = () => {
+    //alert("clicked")
+    const headerLower = document.getElementsByClassName('header__lower');
+    //console.log(headerLower)
+    headerLower[0].classList.remove('active')
+  }
   render() {
     return (
       <>
@@ -22,6 +35,12 @@ export class Header extends Component {
                   <span>|</span>
                   <a href="/#" className="user-menu__join">Join</a>
                 </div>
+              </div>
+              <div 
+                className="menu-icon"
+                onClick={ () => this.ClickMenu() }
+              >
+                <MenuIcon className='menu-icon-svg'/>
               </div>
               <a href="/" className="logo">
                 <MarvelLogo/>
@@ -46,7 +65,14 @@ export class Header extends Component {
             </div>
           </div>
           <div className="header__lower">
+            
             <ul>
+              <li 
+                className="close-icon" 
+                onClick={ () => this.CloseMenu() }
+              >
+                <CloseIcon className='close-icon-svg'/>
+              </li>
               <li><a href="/">HOME</a></li>
               <li><a href="/category">CATEGORIES</a></li>
               <li><a href="/detail">DETAILS</a></li>
