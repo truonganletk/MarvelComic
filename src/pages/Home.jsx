@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Footer from '../layouts/Footer/Footer'
 import Header from '../layouts/Header/Header'
-import ListC from '../layouts/ListC/ListC'
+import ListB from '../layouts/ListB/ListB'
 
 
 export class home extends Component {
@@ -9,7 +9,7 @@ export class home extends Component {
     return (
       <>
         <Header/>
-        <ListC/>
+        <ListB/>
         <Footer/>
       </>
     )
