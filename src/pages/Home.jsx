@@ -3,12 +3,12 @@ import Footer from '../layouts/Footer/Footer'
 import Header from '../layouts/Header/Header'
 import ListB from '../layouts/ListB/ListB'
 
-
 export class home extends Component {
   render() {
     return (
       <>
         <Header/>
+        
         <ListB/>
         <Footer/>
       </>
