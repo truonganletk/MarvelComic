@@ -1,23 +1,25 @@
 // Helper
 
-@import './Helper/variables';
-@import './Helper/mixin';
+@import "./Helper/variables";
+@import "./Helper/mixin";
 
+// Base
 
-// Base 
-
-@import './Base/reset';
+@import "./Base/reset";
 
 // Layouts
 
-@import './Layouts/header';
-@import './Layouts/footer';
-@import './Layouts/listC';
-@import './Layouts/detail';
+@import "./Layouts/header";
+@import "./Layouts/footer";
+@import "./Layouts/ListA";
+@import "./Layouts/listC";
+@import "./Layouts/detail";
 
 // Components
 
-@import './Components/logo';
-@import './Components/icon';
-@import './Components/title';
-@import './Components/overlay';
+@import "./Components/logo";
+@import "./Components/CardA";
+
+@import "./Components/icon";
+@import "./Components/title";
+@import "./Components/overlay";
