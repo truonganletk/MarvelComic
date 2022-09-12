@@ -260,7 +260,7 @@ export class Detail extends Component {
           <Overlay img={`${this.state.objectdetail.thumbnail.path}.${this.state.objectdetail.thumbnail.extension}`} />
           <div className='Detailcard-content'>
             <div className='Detailcard-img'>
-              <img src={`${this.state.objectdetail.thumbnail.path}.${this.state.objectdetail.thumbnail.extension}`} alt="" width={100} />
+              <img src={`${this.state.objectdetail.thumbnail.path}.${this.state.objectdetail.thumbnail.extension}`} alt="" />
             </div>
             <div className='Detailcard-text'>
               <h3 className='Detailcard-text-title Detailcard-text-flex2'>

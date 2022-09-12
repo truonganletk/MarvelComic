@@ -4,9 +4,8 @@
     .Detailcard-content {
         display: flex;
         width: 80%;
-        margin: 60px auto;
+        margin: 80px auto;
         flex-wrap: wrap;
-
         .Detailcard-img {
             flex-basis: 40%;
         }
@@ -23,24 +22,42 @@
             }
             .Detailcard-text-title {
                 color: white;
-                font-size: 22px;
+                font-size: 26px;
+                font-weight: 800;
             }
             .Detailcard-text-description {
-                margin-top: 40px;
+                margin: 40px 0;
                 color: rgb(227, 225, 225);
-                line-height: 22px;
+                line-height: 1.3em;
             }
             .Detailcard-text-button{
                 margin-top: 15px;
                 color: white;
-                font-size: 18px;
+                font-size: 13px;
                 text-transform: uppercase;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 &::after{
                     content: ' ->';
                     color: red;
                 }
             }
         }
+    }
+    @include respond-to('md'){
+        .Detailcard-content{
+            .Detailcard-img{
+                flex-basis: 50%;
+                margin-bottom: 30px;
+            }
+            .Detailcard-text{
+                flex-basis: 100%;
+                padding: 0;
+                &-flex1 {
+                    flex-basis: 100%;
+                }
+                
+            }
+        }
+        
     }
 }
