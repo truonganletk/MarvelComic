@@ -1,18 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const CardC = ({data}) => {
-    return (
-      <div className='cardC-content'>
-        <div className='cardC-image'>
-            <img src={`${data.thumbnail.path}.${data.thumbnail.extension}`} alt=""/>
-        </div>
-        <div className='cardC-text'>
-            <p>Character</p>
-            <h3>{data.name}</h3>
-            <p>{data.modified}</p>
-        </div>
+const CardC = ({ data }) => {
+  return (
+    <div className='cardC-content'>
+      <div className='cardC-image'>
+        <Link to={`/detail/character/${data.id}`}>
+          <img src={`${data.thumbnail.path}.${data.thumbnail.extension}`} alt="" />
+        </Link>
       </div>
-    )
+      <div className='cardC-text'>
+        <Link to={`/detail/character/${data.id}`}>
+          <p>Character</p>
+        </Link>
+        <Link to={`/detail/character/${data.id}`}>
+          <h3 className='cardC-title'>{data.name}</h3>
+        </Link>
+        <p>{data.modified}</p>
+      </div>
+    </div>
+  )
 }
 
 export default CardC
