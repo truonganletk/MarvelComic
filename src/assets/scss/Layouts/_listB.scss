@@ -2,7 +2,10 @@
   width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-content: space-evenly;
 
   .cardB {
     cursor: pointer;
@@ -75,8 +78,6 @@
           bottom: 15px;
           z-index: 3;
           margin-top: 3rem;
-          p {
-          }
         }
       }
     }
@@ -87,7 +88,7 @@
       &::before {
         z-index: 1;
         transform: translate3d(0, 100%, 0);
-        transition: all 0.3 ease;
+        transition: all 0.3s ease;
       }
     }
   }
