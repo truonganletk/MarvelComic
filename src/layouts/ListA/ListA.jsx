@@ -27,7 +27,7 @@ export class ListA extends Component {
                         <ul className='listA'>
                             {
                                 this.state.listA.map((item,index) => {
-                                    if (index>=6) {
+                                    if (index>=5) {
                                         return "";
                                     }
                                     else {
