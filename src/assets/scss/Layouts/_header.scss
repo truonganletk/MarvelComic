@@ -66,6 +66,7 @@
 
       .right-links {
         display: flex;
+        height: 51px;
 
         .searchPromo-Container {
           display: flex;
@@ -149,8 +150,21 @@
 }
 
 @media screen and (max-width: 838px) {
-  .header__upper .upperContainer .user-menu-tab {
-    display: none;
+  .header__upper .upperContainer {
+    .user-menu-tab,
+    .right-links .searchPromo-Container {
+      display: none;
+    }
+
+    .right-links {
+      .search {
+        border: unset;
+
+        .search_icon {
+          fill: #fff;
+        }
+      }
+    }
   }
 
   .menu-icon {
@@ -168,10 +182,10 @@
 
   .header__lower {
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     left: -100%;
     width: 275px;
-    height: 100vh;
+    height: 100%;
     text-align: left;
     align-items: flex-start;
     padding-top: 3rem;
@@ -185,6 +199,7 @@
 
       .close-icon {
         display: block;
+
         .close-icon-svg {
           fill: #fff;
           width: 20px;
