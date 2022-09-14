@@ -125,6 +125,7 @@
     margin: 0 auto;
     text-align: center;
     align-items: center;
+    transition: all 0.3s ease;
 
     ul {
       display: flex;
@@ -183,7 +184,7 @@
   .header__lower {
     position: fixed;
     z-index: 999;
-    left: -100%;
+    left: -275px;
     width: 275px;
     height: 100%;
     text-align: left;
