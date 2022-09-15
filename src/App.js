@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Search from './pages/Search';
 import Characters from './pages/Characters';
 import Comics from './pages/Comics';
+import Page404 from './pages/Page404';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path="/comic/:id" element={<Detail keyword={"comics"}/>} />
           <Route path="/character/:id" element={<Detail keyword={"characters"}/>} />
           <Route path="/" element={<Home/>} />
+          <Route path="*" element={<Page404/>} />
+
         </Routes>
     </Router>
   );
