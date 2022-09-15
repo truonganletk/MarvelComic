@@ -74,8 +74,8 @@ export class Header extends Component {
                 <CloseIcon className='close-icon-svg'/>
               </li>
               <li><a href="/">HOME</a></li>
-              <li><a href="/category">CATEGORIES</a></li>
-              <li><a href="/detail">DETAILS</a></li>
+              <li><a href="/characters">CHARACTERS</a></li>
+              <li><a href="/comics">COMICS</a></li>
               <li><a href="/search">SEARCH</a></li>
             </ul>
           </div>
