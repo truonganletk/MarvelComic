@@ -1,6 +1,7 @@
 .listA-header {
   max-width: 1200px;
-  margin: 1.75rem auto 3.125rem;
+  width: 95%;
+  margin: 3rem auto 3.125rem;
   text-transform: uppercase;
   position: relative;
 
@@ -39,7 +40,8 @@
 
 .carousel {
   max-width: 1200px;
-  margin: 0 auto;
+  width: 95%;
+  margin: 0 auto 4rem;
 
   .outer {
     width: 100%;
@@ -113,13 +115,63 @@
   }
 }
 
+@media screen and (max-width: 1190px) {
+  .carousel {
+    .outer {
+      .listA {
+        margin: 0 auto;
+        width: 70%;
+        flex-wrap: wrap;
+        //justify-content: space-between;
+
+        .cardA {
+          flex: 1 1 30%;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 992px) {
   .carousel {
     .outer {
       .listA {
         margin: 0 auto;
-        width: 60%;
+        width: 70%;
         flex-wrap: wrap;
+        column-gap: 1.5rem;
+        justify-content: center;
+
+        .cardA {
+          flex: 1 1 50%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 685px) {
+  .carousel {
+    .outer {
+      .listA {
+        margin: 0 auto;
+        width: 70%;
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        justify-content: center;
+
+        .cardA {
+          // width: 100%;
+          max-width: 216px;
+          max-height: calc(450px * 4);
+
+          .cardA-content {
+            .cardA-image {
+              max-height: calc(324px * 2);
+              .thumbnail {
+                height: 100%;
+              }
+            }
+          }
+        }
       }
     }
   }
