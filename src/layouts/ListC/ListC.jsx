@@ -9,7 +9,7 @@ export class ListC extends Component {
     }
 
     componentDidMount = () => {
-        axios.get(`http://gateway.marvel.com/v1/public/characters?ts=1&apikey=1a0671e3d28eb43635377754f0572915&hash=a2b08b72060432c20ab8c14a82a2ad72`)
+        axios.get(`http://gateway.marvel.com/v1/public/comics?ts=1&apikey=1a0671e3d28eb43635377754f0572915&hash=a2b08b72060432c20ab8c14a82a2ad72`)
             .then(res => {
                 this.setState({ listC: [...res.data.data.results]})
                 // console.log(res.data.data.results)
@@ -43,8 +43,8 @@ export class ListC extends Component {
             <ul className='listC'>
                 {
                     this.state.listC
-                        .map(item =>
-                            <div key={item.key} className="cardC">
+                        .map((item,index) =>
+                            <div key={index} className="cardC">
                                 <CardC data={item} />
                             </div>
                         )

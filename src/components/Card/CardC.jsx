@@ -5,16 +5,16 @@ const CardC = ({ data }) => {
   return (
     <div className='cardC-content'>
       <div className='cardC-image'>
-        <Link to={`/detail/character/${data.id}`}>
+        <Link to={`/comic/${data.id}`}>
           <img src={`${data.thumbnail.path}.${data.thumbnail.extension}`} alt="" />
         </Link>
       </div>
       <div className='cardC-text'>
-        <Link to={`/detail/character/${data.id}`}>
-          <p>Character</p>
+        <Link to={`/comic/${data.id}`}>
+          <p>Comic</p>
         </Link>
-        <Link to={`/detail/character/${data.id}`}>
-          <h3 className='cardC-title'>{data.name}</h3>
+        <Link to={`/comic/${data.id}`}>
+          <h3 className='cardC-title'>{data.title}</h3>
         </Link>
         <p>{data.modified}</p>
       </div>

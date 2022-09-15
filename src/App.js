@@ -4,7 +4,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Detail from './pages/Detail';
+import Comic from './pages/Comic';
 import Home from './pages/Home';
 import Search from './pages/Search';
 import Characters from './pages/Characters';
@@ -18,8 +18,8 @@ function App() {
           <Route exact path="/characters" element={<Characters/>} />
           <Route exact path="/comics" element={<Comics/>} />
           <Route path="/search" element={<Search/>} />    
-          <Route path="/comic/:id" element={<Detail keyword={"comics"}/>} />
-          <Route path="/character/:id" element={<Detail keyword={"characters"}/>} />
+          <Route path="/comic/:id" element={<Comic keyword={"comics"}/>} />
+          <Route path="/character/:id" element={<Comic keyword={"characters"}/>} />
           <Route path="/" element={<Home/>} />
           <Route path="*" element={<Page404/>} />
 
