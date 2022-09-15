@@ -27,7 +27,7 @@ export class ListB extends Component {
                             }
                             else {
                                 return (
-                                    <li key={item.key} className="cardB">
+                                    <li key={index} className="cardB">
                                         <CardB data={item}/>
                                     </li>
                                 )

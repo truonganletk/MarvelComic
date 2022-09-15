@@ -4,7 +4,7 @@ const CardB = ({data}) => {
     return (
         <div className="cardB-content">
             <div className="cardB-image">                
-                <img src={`${data.thumbnail.path}.${data.thumbnail.extension}`} alt="" srcset="" />
+                <img src={`${data.thumbnail.path}.${data.thumbnail.extension}`} alt="" />
                 
             </div>
             <div className="cardB-text">
