@@ -13,7 +13,7 @@ export class ListA extends Component {
       )
       .then((res) => {
         this.setState({ listA: [...res.data.data.results] });
-        //console.log(res)
+        //console.log(res);
       })
       .catch();
   };
@@ -36,9 +36,10 @@ export class ListA extends Component {
                 } else {
                   return (
                     <li key={index} className="cardA">
-                      <a href="/character/:id">
+                      {/* <a href="/character/:id">
                         <CardA data={item.id} />
-                      </a>
+                      </a> */}
+                      <CardA data={item} />
                     </li>
                   );
                 }
