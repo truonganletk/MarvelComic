@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Space from '../components/Space/Space'
+import Banner from '../layouts/Banner/Banner'
 import Footer from '../layouts/Footer/Footer'
 import Header from '../layouts/Header/Header'
 import ListC from '../layouts/ListC/ListC'
@@ -10,6 +12,8 @@ export class home extends Component {
     return (
       <>
         <Header/>
+        <Banner/>
+        <Space/>
         <ListC/>
         <Promo/>
         <Footer/>
