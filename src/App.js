@@ -15,11 +15,11 @@ function App() {
   return (
     <Router>
         <Routes>
-          <Route exact path="/characters" element={<Characters/>} />
+          {/* <Route exact path="/characters" element={<Characters/>} /> */}
           <Route exact path="/comics" element={<Comics/>} />
           <Route path="/search" element={<Search/>} />    
           <Route path="/comic/:id" element={<Comic keyword={"comics"}/>} />
-          <Route path="/character/:id" element={<Comic keyword={"characters"}/>} />
+          <Route path="/character/:id" element={<Characters keyword={"characters"}/>} />
           <Route path="/" element={<Home/>} />
           <Route path="*" element={<Page404/>} />
 

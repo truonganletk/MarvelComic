@@ -1,0 +1,38 @@
+.Detail_Character {
+    position: relative;
+    background: var(--background-footer);
+
+    .Detail_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 80%;
+
+        .Detail_img {
+            max-width: 405px;
+            max-height: 420px;
+
+            img {
+                display: block;
+            }
+        }
+
+        .Detail_text {
+            color: #fff;
+            flex-basis: 45%;
+
+            .name {
+                font-size: 50px;
+                font-weight: var(--font-bold);
+                margin-bottom: 2rem;
+            }
+
+            .description {
+                font-size: 1rem;
+                letter-spacing: 1px;
+                line-height: 1.625;
+            }
+        }
+    }
+}
