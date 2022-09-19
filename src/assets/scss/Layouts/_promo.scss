@@ -122,6 +122,29 @@
             }
         }
     }
+    &.thin{
+        .promo_content{
+            justify-content: center;
+            align-items: center;
+            .promo_img{
+                flex-basis: auto;
+                img{
+                    height: 33px;
+                }
+            }
+            .promo_text{
+                flex-basis: auto;
+                padding: 10px;
+                .promo_title{
+                    font-size: 14px;
+                }
+                .promo_description{
+                    display: none;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
     @include respond-to("md") {
         .promo_content {
             width: 100%;
@@ -130,6 +153,18 @@
             }
             .promo_text {
                 flex-basis: 100%;
+            }
+        }
+        &.thin{
+            .promo_content {
+                .promo_text {
+                    .promo_title{
+                        display: none;
+                    }
+                    .promo_description{
+                        display: inline-block;
+                    }
+                }
             }
         }
     }
