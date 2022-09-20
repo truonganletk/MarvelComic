@@ -1,6 +1,7 @@
 .Detail_Character {
     position: relative;
     background: var(--background-footer);
+    padding: 2rem 0 4rem;
 
     .Detail_content {
         display: flex;
@@ -11,15 +12,18 @@
 
         .Detail_img {
             max-width: 405px;
-            max-height: 420px;
+            //max-height: 420px;
+
 
             img {
-                display: block;
+                width: 100%;
+                height: 100%;
             }
         }
 
         .Detail_text {
             color: #fff;
+
             flex-basis: 45%;
 
             .name {
@@ -32,6 +36,36 @@
                 font-size: 1rem;
                 letter-spacing: 1px;
                 line-height: 1.625;
+            }
+        }
+    }
+
+
+}
+
+@include respond-to("lg") {
+    .Detail_Character {
+        .Detail_content {
+            //flex-direction: column;
+            flex-wrap: wrap;
+            row-gap: 2rem;
+
+            .Detail_img {
+                margin: 0 auto;
+            }
+
+            .Detail_text {
+                flex-basis: 405px;
+                margin: 0 auto;
+
+                .name {
+                    font-size: 2.25rem;
+                }
+
+                .description {
+
+                    font-size: var(--title-font-size) !important;
+                }
             }
         }
     }
