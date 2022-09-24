@@ -31,7 +31,7 @@ export class ListA extends Component {
           <div className="outer">
             <ul className="listA">
               {this.state.listA.map((item, index) => {
-                if (index >= 5) {
+                if (index >= 20) {
                   return "";
                 } else {
                   return (

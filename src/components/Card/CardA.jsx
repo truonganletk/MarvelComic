@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import MuIcon from "../../assets/images/mu-icon-dark-bg.png";
 
 const CardA = ({ data }) => {
   return (
-    <>
+    <Link to={`/comic/${data.id}`}>
       <div className="cardA-content">
         <div className="cardA-image">
           <img
@@ -19,18 +20,18 @@ const CardA = ({ data }) => {
             {
               data.creators.available >= 2
                 ? data.creators.items.map((item, key) => {
-                    if (key >= 2) {
-                      return "";
-                    } else {
-                      return item.name + (key === 0 ? ", " : "");
-                    }
-                  })
+                  if (key >= 2) {
+                    return "";
+                  } else {
+                    return item.name + (key === 0 ? ", " : "");
+                  }
+                })
                 : data.creators.items[0]?.name //"?" ignore undefined case
             }
           </p>
         </div>
       </div>
-    </>
+    </Link>
   );
 };
 
