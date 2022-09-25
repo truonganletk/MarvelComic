@@ -4,7 +4,6 @@ import Banner from '../layouts/Banner/Banner'
 import Footer from '../layouts/Footer/Footer'
 import Header from '../layouts/Header/Header'
 import ListC from '../layouts/ListC/ListC'
-import ListB from '../layouts/ListB/ListB'
 import Promo from '../layouts/Promo/Promo'
 import PromoThin from '../layouts/Promo/PromoThin'
 

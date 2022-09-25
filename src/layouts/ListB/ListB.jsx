@@ -23,7 +23,7 @@ export class ListB extends Component {
       <>
         <ul className="listB">
           {this.state.listB.map((item, index) => {
-            if (index >= 5) {
+            if (index >= 18) {
               return "";
             } else {
               return (
