@@ -3,6 +3,7 @@ import CardC from '../../components/Card/CardC'
 import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Loader from '../../components/Loader/Loader';
 
 function ListC(props) {
     // const getHash = (ts, private_key, public_key) => {
@@ -51,7 +52,7 @@ function ListC(props) {
                                 <CardC data={item} />
                             </div>
                         ) : <h2>No results</h2>
-                    : <h2>Loading...</h2>
+                    : <Loader/>
             }
         </ul>
     )
