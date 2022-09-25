@@ -1,0 +1,207 @@
+.comic {
+    position: relative;
+    .Comiccard {
+        position: relative;
+        overflow: hidden;
+        .Comiccard-content {
+            display: flex;
+            width: 80%;
+            margin: 80px auto;
+            flex-wrap: wrap;
+            .Comiccard-img {
+                flex-basis: 40%;
+            }
+            .Comiccard-text {
+                flex-basis: 60%;
+                padding-left: 60px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                &-flex1 {
+                    flex-basis: 50%;
+                }
+                &-flex2 {
+                    flex-basis: 100%;
+                }
+                .Comiccard-text-title {
+                    color: white;
+                    font-size: 26px;
+                    font-weight: 800;
+                }
+                .Comiccard-text-description {
+                    margin: 40px 0;
+                    color: rgb(227, 225, 225);
+                    line-height: 1.3em;
+                }
+                .Comiccard-text-button {
+                    margin-top: 15px;
+                    color: white;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    &::after {
+                        content: " ->";
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+    .purchase {
+        .purchase_container {
+            width: 100%;
+            max-width: 1240px;
+            padding: 0 30px;
+            margin: 0 auto;
+            .purchase_content {
+                background-color: #e1e1e1;
+                color: #202020;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: -80px;
+                position: relative;
+                z-index: 2;
+                .purchase_content_left {
+                    flex: 3;
+                    padding: 50px;
+                    border-right: 1px solid #c3c3c3;
+                    .purchase_input {
+                        display: block;
+                        max-width: 100%;
+                        font-size: 16px;
+                        text-transform: none;
+                        border: 0;
+                        height: 40px;
+                        padding: 10px 15px;
+                        margin-bottom: 0;
+                        width: 100%;
+                        background-color: #f2f2f2;
+                        color: #202020;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    .purchase-btn {
+                        width: 100%;
+                        text-align: center;
+                        span {
+                            display: block;
+                        }
+                    }
+                }
+                .purchase_content_right {
+                    flex: 7;
+                    padding: 50px;
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .comic-extend {
+        background: #212121;
+        padding: 160px 0 80px;
+        .extend-container {
+            width: 100%;
+            max-width: 1240px;
+            padding: 0 30px;
+            margin: 0 auto;
+            color: white;
+            .extend-content {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 14px;
+                overflow: hidden;
+                color: gainsboro;
+                .extend-list {
+                    flex: 1;
+                    h6 {
+                        font-size: 16px;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        color: #f2f2f2;
+                        margin-bottom: 15px;
+                    }
+                    ul {
+                        li {
+                            strong {
+                                font-size: bold;
+                                &::after {
+                                    content: " ";
+                                }
+                            }
+                            a {
+                                color: gainsboro;
+                                &:hover {
+                                    text-decoration: underline;
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h5 {
+        font-size: 26px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding-bottom: 30px;
+        small {
+            font-weight: normal;
+            font-size: 11px;
+            letter-spacing: 0;
+            display: block;
+            text-transform: none;
+        }
+    }
+    @include respond-to("md") {
+        .Comiccard {
+            .Comiccard-content {
+                .Comiccard-img {
+                    flex-basis: 50%;
+                    margin-bottom: 30px;
+                }
+                .Comiccard-text {
+                    flex-basis: 100%;
+                    padding: 0;
+                    &-flex1 {
+                        flex-basis: 100%;
+                    }
+                }
+            }
+        }
+        .purchase {
+            .purchase_container {
+                .purchase_content {
+                    margin-bottom: 30px;
+                    .purchase_content_left {
+                        flex: 0 0 100%;
+                        text-align: center;
+                        padding-bottom: 0;
+                    }
+                    .purchase_content_right {
+                        text-align: center;
+                        flex: 0 0 100%;
+                    }
+                }
+            }
+        }
+        .comic-extend {
+            padding: 20px 0;
+            .extend-container {
+                .extend-content {
+                    .extend-list {
+                        flex: 0 0 100%;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

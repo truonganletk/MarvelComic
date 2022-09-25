@@ -18,7 +18,7 @@ export class Promo extends Component {
                             <h3 className='promo_subtitle'>Marvel insider</h3>
                             <h1 className='promo_title'>Watch, Earn, Redeem!​</h1>
                             <p className='promo_description'>Get rewarded for doing what you already do as a fan.​</p>
-                            <a href='/#' className='promo_btn'><span>Join now</span></a>
+                            <a href='/#' className='btn btn-red'><span>Join now</span></a>
                             <p className="promo__legal">Terms and Conditions Apply.</p>
                         </Link>
                         </div>

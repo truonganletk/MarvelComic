@@ -1,0 +1,110 @@
+.btn {
+    font-weight: 700;
+    margin: 15px auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: auto;
+    span {
+        padding: 0 35px;
+        background-color: transparent;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-style: solid;
+            border-width: 0 0 16px 16px;
+            right: 0;
+            bottom: 0;
+            transform: rotate(180deg);
+            border-color: transparent;
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            border-style: solid;
+            border-width: 0 0 16px 16px;
+            left: 0;
+            top: 0;
+            border-color: transparent;
+        }
+    }
+    &::after {
+        content: "";
+        height: 16px;
+        display: block;
+        margin-right: 16px;
+        border-width: 0 0 16px 16px;
+        border-style: solid;
+    }
+    &::before {
+        content: "";
+        height: 16px;
+        margin-left: 16px;
+        display: block;
+        border-style: solid;
+        border-width: 0 0 16px 16px;
+    }
+    &.btn-red {
+        span {
+            color: #fff;
+            background-color: #e62429;
+            &::after {
+                border-color: #e62429 transparent;
+            }
+            &::before {
+                border-color: #e62429 transparent;
+            }
+        }
+        &::after {
+            background-color: #e62429;
+            border-color: #e62429;
+        }
+        &::before {
+            background-color: #e62429;
+            border-color: #e62429;
+        }
+    }
+    &.btn-white {
+        span {
+            color: #151515;
+            border-left: 1px solid #151515;
+            border-right: 1px solid #151515;
+            &::after {
+                background-size: 16px 46px;
+                background-image: repeating-linear-gradient(
+                    -45deg,
+                    #151515,
+                    #151515 1px,
+                    transparent 1px,
+                    transparent 16px
+                );
+            }
+            &::before {
+                background-size: 16px 46px;
+                background-image: repeating-linear-gradient(
+                    -45deg,
+                    #151515,
+                    #151515 1px,
+                    transparent 1px,
+                    transparent 16px
+                );
+            }
+        }
+        &::after {
+            border-width: 0 0 1px 1px;
+            border-color: #151515;
+        }
+        &::before {
+            border-width: 1px 1px 0 0;
+            border-color: #151515;
+        }
+        &:hover{
+            &::after,&::before,span::after,span::before{
+                opacity: 0.4;
+            }
+        }
+    }
+}
