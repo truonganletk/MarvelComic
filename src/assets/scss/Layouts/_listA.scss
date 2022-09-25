@@ -26,16 +26,6 @@
     left: -6px;
     transform-origin: right top;
   }
-
-  .see-all {
-    float: right;
-    font-size: 12px;
-    color: #000;
-
-    &:hover {
-      color: var(--red-hover);
-    }
-  }
 }
 
 .carousel {

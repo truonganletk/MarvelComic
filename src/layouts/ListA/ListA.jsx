@@ -22,10 +22,7 @@ export class ListA extends Component {
     return (
       <>
         <h2 className="listA-header">
-          read for free
-          <a href="/#" className="see-all">
-            See All
-          </a>
+          read for free          
         </h2>
         <div className="carousel">
           <div className="outer">
