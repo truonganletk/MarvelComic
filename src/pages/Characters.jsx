@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../layouts/Footer/Footer";
 import Header from "../layouts/Header/Header";
+import ListD from '../layouts/ListD/ListD'
 import Promo from "../layouts/Promo/Promo";
 
 function withParams(Component) {
@@ -59,6 +60,7 @@ export class Characters extends Component {
                         </div>
                     </div>
                 </div>
+                <ListD data={this.state.props.params.id} />
                 <Promo />
                 <Footer />
             </>
