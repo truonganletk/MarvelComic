@@ -12,13 +12,13 @@ export class home extends Component {
   render() {
     return (
       <>
-        <Header/>
-        <PromoThin/>
-        <Banner/>
-        <Space/>
-        <ListC/>
-        <Promo/>
-        <Footer/>
+        <Header />
+        <PromoThin />
+        <Banner />
+        <Space />
+        <ListC />
+        <Promo promoimg="promoimg1" subtitle="Marvel insider" title="Watch, Earn, Redeem!" description="Get rewarded for doing what you already do as a fan." buttontext="Join now" legal="Terms and Conditions Apply." />
+        <Footer />
       </>
     )
   }

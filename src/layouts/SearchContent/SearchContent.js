@@ -5,6 +5,7 @@ import {
     // useLocation,
     useNavigate, createSearchParams
 } from "react-router-dom";
+import SpaceWhite from '../../components/Space/SpaceWhite';
 import ListC from '../ListC/ListC';
 
 
@@ -57,7 +58,10 @@ const SearchContent = () => {
                 </li>
             </ul>
             {
-                loadList ? <ListC nameStartWith={nameStart} /> : <></>
+                loadList ? <ListC nameStartWith={nameStart} /> : <>
+                        <h1>Press Enter to Search</h1>
+                        <SpaceWhite />
+                    </>
             }
         </div>
     );

@@ -53,15 +53,14 @@
                     font-weight: 400;
                     color: white;
                 }
-                .promo__legal {
+                .promo_legal {
                     position: absolute;
-                    bottom: 10px;
-                    padding: 0 30px;
+                    bottom: -30px;
                     width: 100%;
                     text-align: center;
                     left: 0;
                     line-height: 1;
-                    font-size: 11px;
+                    font-size: 10px;
                     font-weight: normal;
                     color: white;
                 }
@@ -102,6 +101,9 @@
             width: 100%;
             .promo_img {
                 flex-basis: 100%;
+                img{
+                    width: 100%;
+                }
             }
             .promo_text {
                 flex-basis: 100%;
