@@ -1,4 +1,4 @@
-# MarvelComics
+# [MarvelComics](https://marvel-comic-mu.vercel.app/)
 
 This is a personal project for learning purposes. It uses the official [Marvel API](https://www.marvel.com/documentation/generalinfo).
 
@@ -13,13 +13,17 @@ This is a personal project for learning purposes. It uses the official [Marvel A
 Project is created with:
 
 - React version: 18.2.0
-- Sass, ES6
+- React-router-dom: 6.3.0
+- ES6
+- Sass
 - [The Marvel Comics API](https://developer.marvel.com)
 
 ## Features
 
 - Responsive website
 - Searches for comics/characters named
+- Fetches lists of comics filtered by a character id
+- Fetches a single comic by id
 
 ## Setup
 
