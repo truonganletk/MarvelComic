@@ -28,9 +28,9 @@ export class ListB extends Component {
             } else {
               return (
                 <li key={index} className="cardB">
-                  <a href="/character/:id">
-                    <CardB data={item} />
-                  </a>
+
+                  <CardB data={item} />
+
                 </li>
               );
             }

@@ -8,6 +8,7 @@ import Comic from './pages/Comic';
 import Home from './pages/Home';
 import Search from './pages/Search';
 import Characters from './pages/Characters';
+import Character from './pages/Character';
 import Comics from './pages/Comics';
 import Page404 from './pages/Page404';
 
@@ -19,7 +20,7 @@ function App() {
           <Route exact path="/comics" element={<Comics/>} />
           <Route path="/search" element={<Search/>} />    
           <Route path="/comic/:id" element={<Comic/>} />
-          <Route path="/character/:id" element={<Comic/>} />
+          <Route path="/character/:id" element={<Character/>} />
           <Route path="/" element={<Home/>} />
           <Route path="*" element={<Page404/>} />
 

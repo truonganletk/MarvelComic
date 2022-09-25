@@ -1,0 +1,59 @@
+import axios from "axios";
+import React, { Component } from "react";
+import CardA from "../../components/Card/CardA";
+
+export class ListD extends Component {
+    constructor(props) {
+        super(props);
+        //console.log(props);
+        this.state = {
+            props,
+            listD: [],
+        };
+    }
+
+    componentDidMount = () => {
+        axios
+            .get(
+                `http://gateway.marvel.com/v1/public/characters/${this.state.props.data}/comics?ts=1&apikey=1a0671e3d28eb43635377754f0572915&hash=a2b08b72060432c20ab8c14a82a2ad72`
+            )/*1+private+public */
+            .then((res) => {
+                //console.log(res)
+                this.setState({ listD: [...res.data.data.results] });
+            })
+            .catch();
+    };
+    render() {
+        return (
+            <>
+                <h2 className="listA-header">
+                    read more
+
+                </h2>
+                <div className="carousel">
+                    <div className="outer">
+                        <ul className="listA">
+                            {this.state.listD.map((item, index) => {
+                                if (index >= 10) {
+                                    return "";
+                                } else {
+                                    return (
+                                        <li key={index} className="cardA">
+
+                                            <CardA data={item} />
+
+                                        </li>
+                                    );
+                                }
+                            })}
+                        </ul>
+                    </div>
+                </div>
+
+
+            </>
+        );
+    }
+}
+
+export default ListD;
