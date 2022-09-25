@@ -22,7 +22,7 @@ function Promo(props) {
                             <h3 className='promo_subtitle'>{props.subtitle}</h3>
                             <h1 className='promo_title'>{props.title}</h1>
                             <p className='promo_description'>{props.description}</p>
-                            <a href='/#' className='btn btn-red'><span>{props.buttontext}</span></a>
+                            <p className='btn btn-red'><span>{props.buttontext}</span></p>
                             <p className="promo_legal">{props.legal}</p>
                         </Link>
                     </div>

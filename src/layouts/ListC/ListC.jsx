@@ -26,7 +26,7 @@ function ListC(props) {
     //     })
     const [gotData, setgotData] = useState(false);
     const [listC, setlistC] = useState([]);
-    console.log(props);
+    // console.log(props);
     useEffect(() => {
         const componentDidMount = () => {
             // titleStartsWith=&

@@ -10,8 +10,8 @@ export class Banner extends Component {
                     </div>
                 </figure>
                 <div className='banner-text'>
-                    <div class="banner-title">Marvel Characters</div>
-                    <div class="banner-subtitle">
+                    <div className="banner-title">Marvel Characters</div>
+                    <div className="banner-subtitle">
                         Get hooked on a hearty helping of heroes and villains from the humble House of Ideas!
                     </div>
                 </div>

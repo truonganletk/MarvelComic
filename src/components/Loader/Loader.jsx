@@ -4,7 +4,7 @@ export class Loader extends Component {
   render() {
     return (
         <div className='loader-block'>
-            <div class="loader"></div>
+            <div className="loader"></div>
         </div>
     )
   }
