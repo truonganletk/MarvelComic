@@ -5,7 +5,7 @@
     .promo_content {
         display: flex;
         align-items: center;
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         flex-wrap: wrap;
         .promo_img {
@@ -69,6 +69,7 @@
         }
     }
     &.thin {
+        background-color: #151515;
         .promo_content {
             justify-content: center;
             align-items: center;
@@ -89,6 +90,11 @@
                     font-size: 14px;
                 }
             }
+        }
+    }
+    @include respond-to("lg") {
+        .promo_content {
+            width: 95%;
         }
     }
     @include respond-to("md") {

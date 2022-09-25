@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import characterart from '../../assets/images/characters_art_mas_dsk_01.jpeg'
-import Overlay from '../../components/Overlay/Overlay'
 
 export class Banner extends Component {
     render() {
         return (
             <div className='banner'>
-                <figure className='banner-bg'>
-                    <Overlay />
+                <figure className='banner-bg'>                    
                     <div className='banner-image' style={{ backgroundImage: `url(${characterart})` }}>
                     </div>
                 </figure>

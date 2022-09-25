@@ -5,6 +5,7 @@ import Footer from '../layouts/Footer/Footer'
 import Header from '../layouts/Header/Header'
 import ListC from '../layouts/ListC/ListC'
 import Promo from '../layouts/Promo/Promo'
+import PromoThin from '../layouts/Promo/PromoThin'
 
 
 export class home extends Component {
@@ -12,6 +13,7 @@ export class home extends Component {
     return (
       <>
         <Header/>
+        <PromoThin/>
         <Banner/>
         <Space/>
         <ListC/>

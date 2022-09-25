@@ -12,7 +12,7 @@ footer {
             padding: 0 15px;
             li {
                 text-transform: uppercase;
-                font-size: 18px;
+                font-size: 13px;
                 letter-spacing: 1.2px;
                 margin-bottom: 12px;
             }
@@ -30,22 +30,24 @@ footer {
             }
         }
         .footer-brand {
-            padding: 0 15px;
+            padding: 0 10px;
             .brand-card {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 22px;
-
                 img {
-                    width: 70%;
-                    height: auto;
+                    width: 60%;
+                    height: auto; 
                 }
                 .brand-card-text {
                     h3 {
                         text-transform: uppercase;
                         letter-spacing: 1.5px;
-                        font-size: 16px;
+                        font-size: 13px;
                         color: white;
+                    }
+                    p{
+                        font-size: 13px;
                     }
                 }
             }
@@ -55,7 +57,7 @@ footer {
             h3 {
                 text-transform: uppercase;
                 letter-spacing: 1.5px;
-                font-size: 16px;
+                font-size: 14px;
                 color: white;
                 margin-bottom: 20px;
             }
@@ -156,10 +158,10 @@ footer {
             margin: 0 20px;
             .logo{
                 flex-basis: 100%;
-                text-align: center;
-                margin-bottom: 50px;
+                margin-bottom: 50px;                
                 img{
-                    width: 40px;            
+                    width: 40px;     
+                    margin: 0 auto;    
                 }
             }
             .footer-list{
