@@ -13,7 +13,7 @@ export class home extends Component {
     return (
       <>
         <Header />
-        <h1>HOME PAGE</h1>
+        <h1 className="h1-tilte">HOME PAGE</h1>
         <PromoThin />
         <Banner />
         <Space />

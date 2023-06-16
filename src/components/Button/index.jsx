@@ -5,7 +5,7 @@ function Button({ onClick, label = "click me!", isDisabled = false }) {
     if (onClick) onClick();
   };
   return (
-    <button disabled={isDisabled} onClick={handleOnClick}>
+    <button className="btn" disabled={isDisabled} onClick={handleOnClick}>
       {label}
     </button>
   );
